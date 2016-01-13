@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLAutoLayoutWithXibVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOF-av-Ofs">
+                    <rect key="frame" x="40" y="124" width="128" height="113"/>
+                    <color key="backgroundColor" red="0.88810815269999999" green="0.78802422459999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQ5-uB-Sag">
+                    <rect key="frame" x="40" y="277" width="295" height="350"/>
+                    <color key="backgroundColor" red="0.98588411799999998" green="1" blue="0.70901404329999995" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-QN-2e5">
+                    <rect key="frame" x="279" y="588" width="30" height="30"/>
+                    <state key="normal" title="next"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uD-jm-yQ8">
+                    <rect key="frame" x="208" y="124" width="127" height="113"/>
+                    <color key="backgroundColor" red="0.70064746560000002" green="1" blue="0.77184832680000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3uD-jm-yQ8" firstAttribute="height" secondItem="tOF-av-Ofs" secondAttribute="height" id="8JV-Vb-Kiw"/>
+                <constraint firstAttribute="bottom" secondItem="vQ5-uB-Sag" secondAttribute="bottom" constant="40" id="CPk-SJ-8vY"/>
+                <constraint firstItem="3uD-jm-yQ8" firstAttribute="bottom" secondItem="tOF-av-Ofs" secondAttribute="bottom" id="EbE-Xx-wHq"/>
+                <constraint firstItem="tOF-av-Ofs" firstAttribute="top" secondItem="3uD-jm-yQ8" secondAttribute="bottom" constant="-113" id="Fei-oo-WYZ"/>
+                <constraint firstItem="tOF-av-Ofs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="GZc-Ip-LCG"/>
+                <constraint firstItem="3uD-jm-yQ8" firstAttribute="leading" secondItem="tOF-av-Ofs" secondAttribute="trailing" constant="40" id="Gfx-4b-SKd"/>
+                <constraint firstItem="vQ5-uB-Sag" firstAttribute="leading" secondItem="tOF-av-Ofs" secondAttribute="leading" id="LWU-cO-dFx"/>
+                <constraint firstItem="3uD-jm-yQ8" firstAttribute="width" secondItem="tOF-av-Ofs" secondAttribute="width" id="Ljh-za-ud6"/>
+                <constraint firstItem="vQ5-uB-Sag" firstAttribute="top" secondItem="tOF-av-Ofs" secondAttribute="bottom" constant="40" id="SgT-8Q-E8w"/>
+                <constraint firstItem="vQ5-uB-Sag" firstAttribute="trailing" secondItem="3uD-jm-yQ8" secondAttribute="trailing" id="inc-W2-CzA"/>
+                <constraint firstAttribute="trailing" secondItem="3uD-jm-yQ8" secondAttribute="trailing" constant="40" id="q7g-kz-6kn"/>
+                <constraint firstItem="3uD-jm-yQ8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="124" id="ytF-np-PM0"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="612.5" y="412.5"/>
+        </view>
+        <viewController id="Naa-Se-Atg">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="nEF-ew-sbN"/>
+                <viewControllerLayoutGuide type="bottom" id="QyD-Ze-zR0"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="nrp-0r-U3r">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <size key="freeformSize" width="375" height="667"/>
+            <point key="canvasLocation" x="799.5" y="412.5"/>
+        </viewController>
+        <view contentMode="scaleToFill" id="jYJ-nw-ohE">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="864" y="393"/>
+        </view>
+    </objects>
+</document>
